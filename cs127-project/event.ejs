@@ -1,0 +1,32 @@
+<% include header.ejs %>
+    <div class="table-wrapper">
+        <% if (event.length > 0) {%>
+            <table class="table table-hovered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Event Number</th>
+                        <th scope="col">Event Name</th>
+                        <th scope="col">Event Date</th>
+                        <th scope="col">College</th>
+                        <th scope="col">University</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% event.forEach((even, index) => { %>
+                        <tr>
+                            <th scope="row"><%= even.eventno %></th>
+                            <td><%= even.eventname %></td>
+                            <td><%= even.eventdate %></td>
+                            <td><%= even.collegename %></td>
+                            <td><%= even.universityname %></td>
+                        </tr>
+                    <% }) %>
+                </tbody>
+            </table>
+        <% } else { %>
+            <p class="text-center">No events found. Click <a href="/view" >here</a> to go back.</p>
+        <% } %>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "cs127-project",
+  "version": "0.0.1",
+  "dependencies": {
+    "body": "^5.1.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-fileupload": "^1.0.0",
+    "mysql": "^2.16.0",
+    "parser": "^0.1.4",
+    "req-flash": "0.0.3"
+  }
+}
